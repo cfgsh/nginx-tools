@@ -299,7 +299,7 @@ function get_site_server_names()
 
 	[ -z "$listen" ] || listen="[:"${listen// /:}"]"
 
-	if [ "${#servers[@]}" -gt 2 ]; then
+	if [ "${#servers[@]}" -gt 10 ]; then
 		echo "${servers[0]}, ${servers[1]}, ... ($servercnt total) $listen"
 	else
 		servers="${servers[@]}"
